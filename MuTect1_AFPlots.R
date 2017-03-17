@@ -3,7 +3,7 @@
 ##################################################################################################
 # Start
 #"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-# MuTect 1 - mutation frequency plot (Chromosome-based), written by Dr Reza Rafiee
+# MuTect1 - mutation frequency plot (Chromosome-based), written by Dr Reza Rafiee
 # Research Associate, Northern Institute for Cancer Research, Newcastle University
 # This script gets a txt file including all mutations obtained from Mutect-1 
 ############################################# MuTect1 ############################################
