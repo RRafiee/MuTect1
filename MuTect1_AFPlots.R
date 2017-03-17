@@ -12,7 +12,7 @@ Pathfolder <- "~/MuTect1/"  # initialise the path of the txt file
 txtfilename <- "VCFsamplefilefromMuTect1Analysis.txt"
 pathtxtfile <- paste(Pathfolder,txtfilename,sep = "")
 Sample_MuTect1 <- read.table(pathtxtfile,header=T, sep="\t")  # 
-
+# Choose only mutations for which Filter's flag is "PASS" and exclude rejected mutations
 Sample_MuTect1_Pass <- Sample_MuTect1[which(Sample_MuTect1$FILTER == "PASS"),]
 Sample_MuTect1_Pass_Colourfull <-Sample_MuTect1_Pass 
 Sample_MuTect1_Pass_Colourfull[,"TYPE"] <- vector()  # adding a coulmn for the type of mutation
@@ -35,6 +35,7 @@ for (i in 1:nrow(Sample_MuTect1_Pass_Colourfull))
   
 }
 
+# Example plot for only 4 chromosomes (1 to 4)
 par(mfrow=c(2,2))
 par(mar=c(5,4,4,5) + 0.1)
 par(cex.axis=0.8)
